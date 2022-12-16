@@ -10,10 +10,9 @@ export const GlobalStyle = createGlobalStyle`
 }
 
   body {
+    background-color: ${color("blue", "secondary")};
     background-image: url("/assets/images/body-bg-img.png");
-    background: ${color("blue", "secondary")};
     background-size: contain;
-    background-position: bottom;
     font-family: Poppins, Sans-Serif;
     margin: ${space(0)};
     padding: ${space(0)};
