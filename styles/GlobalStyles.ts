@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import { color, space } from "./theme";
+import bodyBg from "../public/assets/images/body-bg-img.png";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -8,12 +10,13 @@ export const GlobalStyle = createGlobalStyle`
 }
 
   body {
+    background-image: url("/assets/images/body-bg-img.png");
+    background: ${color("blue", "secondary")};
+    background-size: contain;
+    background-position: bottom;
     font-family: Poppins, Sans-Serif;
-    margin: 0px;
-    padding: 0px;
+    margin: ${space(0)};
+    padding: ${space(0)};
   }  
-  a {
-  color: white;
-  text-decoration: none;
-}
+
 `;
